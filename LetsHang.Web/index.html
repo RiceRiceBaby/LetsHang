@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ASP.NET Application</title>
+    
+    <link rel="stylesheet" type="text/css" href="Content/site.css" />
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="Content/ui-bootstrap-csp.css" />
+    <link rel="stylesheet" type="text/css" href="Content/ui-grid.css" />
+
+    <script data-main="scripts/app/main" src="Scripts/require.js"></script> 
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">LETS HANG</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#PendingUserAccounts">Pending User Accounts</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#Registration">Register</a></li>
+                    <li><a href="#Login">Log In</a></li>
+                    <li><a href="#PasswordReset">Password Reset</a></li>                   
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <div ng-view=""></div>
+        <hr />
+        <footer>
+            <p>&copy; My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    <script>
+    </script>
+</body>
+</html>

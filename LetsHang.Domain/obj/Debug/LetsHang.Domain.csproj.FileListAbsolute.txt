@@ -1,0 +1,5 @@
+c:\Projects\LetsHang\LetsHang.Domain\bin\Debug\LetsHang.Domain.dll
+c:\Projects\LetsHang\LetsHang.Domain\bin\Debug\LetsHang.Domain.pdb
+c:\Projects\LetsHang\LetsHang.Domain\obj\Debug\LetsHang.Domain.dll
+c:\Projects\LetsHang\LetsHang.Domain\obj\Debug\LetsHang.Domain.pdb
+C:\Projects\LetsHang\LetsHang.Domain\obj\Debug\LetsHang.Domain.csprojResolveAssemblyReference.cache

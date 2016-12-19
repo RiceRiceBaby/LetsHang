@@ -1,0 +1,14 @@
+c:\Projects\LetsHang\LetsHang.Service\obj\Debug\LetsHang.Service.csprojResolveAssemblyReference.cache
+c:\Projects\LetsHang\LetsHang.Service\bin\Debug\LetsHang.Service.dll.config
+c:\Projects\LetsHang\LetsHang.Service\bin\Debug\LetsHang.Service.dll
+c:\Projects\LetsHang\LetsHang.Service\bin\Debug\LetsHang.Service.pdb
+c:\Projects\LetsHang\LetsHang.Service\bin\Debug\EntityFramework.dll
+c:\Projects\LetsHang\LetsHang.Service\bin\Debug\EntityFramework.SqlServer.dll
+c:\Projects\LetsHang\LetsHang.Service\bin\Debug\LetsHang.Data.dll
+c:\Projects\LetsHang\LetsHang.Service\bin\Debug\LetsHang.Domain.dll
+c:\Projects\LetsHang\LetsHang.Service\bin\Debug\LetsHang.Data.pdb
+c:\Projects\LetsHang\LetsHang.Service\bin\Debug\LetsHang.Domain.pdb
+c:\Projects\LetsHang\LetsHang.Service\bin\Debug\EntityFramework.xml
+c:\Projects\LetsHang\LetsHang.Service\bin\Debug\EntityFramework.SqlServer.xml
+c:\Projects\LetsHang\LetsHang.Service\obj\Debug\LetsHang.Service.dll
+c:\Projects\LetsHang\LetsHang.Service\obj\Debug\LetsHang.Service.pdb
