@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsHang.Domain", "LetsHang
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsHang.Service", "LetsHang.Service\LetsHang.Service.csproj", "{D50D2CA0-5DA2-4984-81C8-FD50DFFE5776}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LetsHang.DBSource", "LetsHang.DBSource\LetsHang.DBSource.sqlproj", "{9F524AFD-FC72-4F58-816B-FB74E1CF2548}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,12 @@ Global
 		{D50D2CA0-5DA2-4984-81C8-FD50DFFE5776}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D50D2CA0-5DA2-4984-81C8-FD50DFFE5776}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D50D2CA0-5DA2-4984-81C8-FD50DFFE5776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F524AFD-FC72-4F58-816B-FB74E1CF2548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F524AFD-FC72-4F58-816B-FB74E1CF2548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F524AFD-FC72-4F58-816B-FB74E1CF2548}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9F524AFD-FC72-4F58-816B-FB74E1CF2548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F524AFD-FC72-4F58-816B-FB74E1CF2548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F524AFD-FC72-4F58-816B-FB74E1CF2548}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

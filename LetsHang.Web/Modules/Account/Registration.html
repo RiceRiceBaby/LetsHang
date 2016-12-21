@@ -1,0 +1,48 @@
+﻿<h1 align="center">Registration</h1>
+
+<div ng-controller="RegistrationController">
+    <servervalidation val-errors="ErrorList"></servervalidation>
+    <loadmask name="myLoadMask"></loadmask>
+    <form name="registrationForm" ng-submit="onSubmitClick(registrationForm.$valid)" novalidate>
+        <div class="form-group" ng-class="{ 'has-error' : registrationForm.FirstName.$invalid && !registrationForm.FirstName.$pristine }">
+            <label class="fieldlabel">First Name</label>
+            <input type="text" name="FirstName" ng-model="regModel.FirstName" class="form-control" required="required" />
+            <p ng-show="registrationForm.FirstName.$invalid && !registrationForm.FirstName.$pristine" class="help-block">First Name is required.</p>
+        </div>
+
+        <div class="form-group" ng-class="{ 'has-error' : registrationForm.LastName.$invalid && !registrationForm.LastName.$pristine }">
+            <label class="fieldlabel">Last Name</label>
+            <input type="text" name="LastName" ng-model="regModel.LastName" class="form-control" required="required" />
+            <p ng-show="registrationForm.LastName.$invalid && !registrationForm.LastName.$pristine" class="help-block">Last Name is required.</p>
+        </div>
+
+        <div class="form-group" ng-class="{ 'has-error' : registrationForm.EmailAddress.$invalid && !registrationForm.EmailAddress.$pristine }">
+            <label class="fieldlabel">Email Address</label>
+            <input type="email" name="EmailAddress" ng-model="regModel.EmailAddress" class="form-control" required="required" />
+            <p ng-show="registrationForm.EmailAddress.$invalid && !registrationForm.EmailAddress.$pristine" class="help-block">Enter a valid Email Address.</p>
+        </div>
+
+        <div class="form-group" ng-class="{ 'has-error' : registrationForm.Password.$invalid && !registrationForm.Password.$pristine }">
+            <label class="fieldlabel">Password</label>
+            <input type="password" name="Password" ng-model="regModel.Password" class="form-control" 
+                   required="required" ng-pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,15}$/" />
+            <p ng-show="registrationForm.Password.$invalid && !registrationForm.Password.$pristine && registrationForm.Password.$error.required" class="help-block">Password is required</p>
+            <p ng-show="registrationForm.Password.$error.pattern" class="help-block">Password must have at least 1 lowercase, 1 upercase, 1 number, and 1 special character</p>
+        </div>
+
+        <div class="form-group" ng-class="{ 'has-error' : registrationForm.ConfirmPassword.$invalid && !registrationForm.ConfirmPassword.$pristine }">
+            <label class="fieldlabel">Confirm Password</label>
+            <input type="password" name="ConfirmPassword" ng-model="regModel.ConfirmPassword" class="form-control" 
+                   required="required" compare-to="regModel.Password" />
+            <p ng-show="registrationForm.ConfirmPassword.$invalid && !registrationForm.ConfirmPassword.$pristine"
+               class="help-block">Passwords do not match.</p>
+        </div>
+
+        <div class="form-group">
+            <div class="submit">
+                <input type="submit" name="button" class="btn btn-primary" value="Register" ng-disabled="registrationForm.$invalid" />
+                <input type="button" name="button" class="btn btn-primary" value="Cancel" ng-click="onCancelClick()" />
+            </div>
+        </div>
+    </form>
+</div>

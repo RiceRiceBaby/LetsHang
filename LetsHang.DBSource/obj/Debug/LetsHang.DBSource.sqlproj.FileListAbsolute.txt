@@ -1,0 +1,9 @@
+C:\Projects\LetsHang\LetsHang.DBSource\bin\Debug\LetsHang.DBSource.dacpac
+C:\Projects\LetsHang\LetsHang.DBSource\bin\Debug\LetsHang.DBSource.dll
+C:\Projects\LetsHang\LetsHang.DBSource\bin\Debug\LetsHang.DBSource.pdb
+C:\Projects\LetsHang\LetsHang.DBSource\obj\Debug\Model.xml
+C:\Projects\LetsHang\LetsHang.DBSource\obj\Debug\refactor.xml
+C:\Projects\LetsHang\LetsHang.DBSource\obj\Debug\postdeploy.sql
+C:\Projects\LetsHang\LetsHang.DBSource\obj\Debug\predeploy.sql
+C:\Projects\LetsHang\LetsHang.DBSource\obj\Debug\LetsHang.DBSource.dll
+C:\Projects\LetsHang\LetsHang.DBSource\obj\Debug\LetsHang.DBSource.pdb

@@ -45,6 +45,8 @@
     <Compile Include="DomainModels\Account\UserSearchCriteriaDM.cs" />
     <Compile Include="DomainModels\BaseEntity.cs" />
     <Compile Include="DomainModels\Lookups\UserStatusDM.cs" />
+    <Compile Include="Enums\UserStatusEnum.cs" />
+    <Compile Include="Exceptions\ValidationException.cs" />
     <Compile Include="IServices\IAccountService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

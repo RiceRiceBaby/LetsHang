@@ -8,5 +8,6 @@ namespace LetsHang.Domain.DomainModels.Account
 {
     public class UserSearchCriteriaDM
     {
+        public string EmailAddress { get; set; }
     }
 }

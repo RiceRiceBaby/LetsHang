@@ -1,0 +1,23 @@
+﻿<h2>Log In</h2>
+
+<div ng-controller="LoginController">
+    <form name="LoginForm" ng-submit="submitForm(LoginForm.$valid)" novalidate>
+
+        <div class="form-group" ng-class="{ 'has-error' : LoginForm.UserName.$invalid && !LoginForm.UserName.$pristine }">
+            <label class="fieldlabel">User Name</label>
+            <input type="text" name="UserName" ng-model="LoginModel.UserName" class="form-control" />
+            <p ng-show="LoginForm.Login.$invalid && !LoginForm.UserName.$pristine" class="help-block">User Name is required.</p>
+        </div>
+
+        <div class="form-group" ng-class="{ 'has-error' : LoginForm.Password.$invalid && !LoginForm.Password.$pristine }">
+            <label class="fieldlabel">Password</label>
+            <input type="password" name="Password" ng-model="LoginModel.Password" class="form-control" />
+            <p ng-show="LoginForm.Login.$invalid && !LoginForm.UserName.$pristine" class="help-block">Password required.</p>
+        </div>
+        <div class="form-group">
+            <div class="submit">
+                <input type="submit" name="button" class="btn btn-primary" value="Login" ng-disabled="LoginForm.$invalid" />
+            </div>
+        </div>
+    </form>
+</div>

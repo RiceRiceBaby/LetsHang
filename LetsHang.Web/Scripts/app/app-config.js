@@ -1,5 +1,5 @@
 ﻿define(['angularAMD', 'angular-route', 'ui-bootstrap', 'ui-grid'], function (angularAMD) {
-    var app = angular.module("GTMP", ['ngRoute', 'ui.bootstrap', 'ui.grid']);
+    var app = angular.module("LetsHang", ['ngRoute', 'ui.bootstrap', 'ui.grid']);
 
     app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 
@@ -7,6 +7,10 @@
         .when("/", angularAMD.route({
             templateUrl: function (rp) { return 'Modules/Account/login.html'; },
             controllerUrl: 'Modules/Account/LoginController'
+        }))
+        .when("/Registration", angularAMD.route({
+            templateUrl: function (rp) { return 'Modules/Account/Registration.html'; },
+            controllerUrl: 'Modules/Account/RegistrationController'
         }))
         .when("/:module/:page", angularAMD.route({
             templateUrl: function (rp) { return 'Modules/' + rp.module + '/' + rp.page + '.html'; },
@@ -31,7 +35,7 @@
                 }]
             }
         }))
-        .otherwise({ redirectTo: '/' })
+        .otherwise({ redirectTo: '/' });
     }]);
 
     loadDirectives(app);

@@ -10,8 +10,9 @@ namespace LetsHang.Domain.IServices
 {
     public interface IAccountService
     {
-        void AddUser(UserDM dm);
+        void RegisterUser(UserDM dm);
         void UpdateUser(UserDM dm);
+        void ApproveUserById(int userId);
         void RemoveUserById(int userId);
         IList<UserDM> SearchUsers(UserSearchCriteriaDM crit);
         UserDM GetUserById(int id);

@@ -1,6 +1,7 @@
 ﻿using LetsHang.Data;
 using LetsHang.Domain.DomainModels;
 using LetsHang.Domain.DomainModels.Account;
+using LetsHang.Domain.Enums;
 using LetsHang.Domain.IServices;
 using System;
 using System.Collections.Generic;
@@ -13,10 +14,13 @@ namespace LetsHang.Service
 {
     public class AccountService : IAccountService
     {
-        public void AddUser(UserDM dm)
+        public void RegisterUser(UserDM dm)
         {
+            // Sets status to pending and creates account
             using (EFContext context = new EFContext())
             {
+                dm.StatusId = Convert.ToInt32(UserStatusEnum.Pending);
+
                 context.Set<UserDM>().Add(dm);
 
                 context.SaveChanges();
@@ -33,6 +37,24 @@ namespace LetsHang.Service
                     throw new Exception("User does not exist");
 
                 entity.Update(dm);
+                context.Entry<UserDM>(entity).State = EntityState.Modified;
+
+                context.SaveChanges();
+            }
+        }
+
+
+        public void ApproveUserById(int userId)
+        {
+            // Grabs user, sets status to active, and updates account
+            using (EFContext context = new EFContext())
+            {
+                UserDM entity = context.Set<UserDM>().Where(x => x.Id == userId).FirstOrDefault();
+
+                if (entity == null)
+                    throw new Exception("User does not exist");
+
+                entity.StatusId = Convert.ToInt32(UserStatusEnum.Active);
                 context.Entry<UserDM>(entity).State = EntityState.Modified;
 
                 context.SaveChanges();

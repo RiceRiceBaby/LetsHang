@@ -7,29 +7,30 @@ require.config({
 
     // alias libraries paths
     paths: {
-        'application-configuration' : 'scripts/app/app-config',
+        'app-config' : 'scripts/app/app-config',
         'angular': 'scripts/angular',
         'angular-route': 'scripts/angular-route',
         'angular-animate': 'scripts/angular-animate',
         'angular-touch': 'scripts/angular-touch',
         'angularAMD': 'scripts/angularAMD',
         'bootstrap' : 'scripts/bootstrap',
+        'jquery' : 'scripts/jquery-1.9.1',
         'ui-bootstrap': 'scripts/angular-ui/ui-bootstrap-tpls',
         'ui-grid' : 'scripts/ui-grid',
         'ngload': 'scripts/ngload',
-        'angular-directive': 'scripts/angular-configuration/angular-directive',
-        'administrationService': 'services/administrationService',
-        'accountService': 'services/accountService',
-        'lookupService': 'services/lookupService'
+        'directive': 'scripts/app/directive',
+        'accountService': 'services/accountService'
     },
 
     // Add angular modules that does not support AMD out of the box, put it in a shim
     shim: {
+        'bootstrap': ['jquery'],
         'angularAMD': ['angular'],
         'ui-bootstrap': ['angular', 'bootstrap'],
-        'ui-grid': ['angular-touch', 'angular-animate']
+        'ui-grid': ['angular-touch', 'angular-animate'],
+        'app-config': ['angular', 'directive']
     },
 
     // kick start application
-    deps: ['application-configuration']
+    deps: ['app-config']
 });
